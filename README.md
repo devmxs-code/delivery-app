@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+# Pizzaria Delivery System - React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
 
-## Available Scripts
+Este projeto é um sistema de delivery para pizzaria desenvolvido em React com TypeScript. Ele oferece uma experiência completa de pedidos online, desde a seleção de produtos até a finalização do pedido via WhatsApp.
 
-In the project directory, you can run:
+## Funcionalidades Principais
 
-### `npm start`
+- **Cardápio interativo** com categorias de produtos (Pizzas e Bebidas)
+- **Sistema de carrinho** com adição/remoção de itens e quantidades
+- **Opção de pizza meio a meio** com seleção de dois sabores
+- **Formulário de dados do cliente** para entrega
+- **Múltiplas formas de pagamento** (Dinheiro, Cartão, PIX)
+- **Confirmação de pedido** com resumo completo
+- **Integração com WhatsApp** para envio do pedido
+- **Responsividade** para dispositivos móveis e desktop
+- **Verificação de horário de funcionamento**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tecnologias Utilizadas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React com TypeScript
+- Lucide React para ícones
+- Tailwind CSS para estilização
+- React Hooks (useState, useEffect)
 
-### `npm test`
+## Como Executar o Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Certifique-se de ter o Node.js instalado
+2. Clone este repositório
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+4. Execute o projeto:
+   ```bash
+   npm start
+   ```
 
-### `npm run build`
+## Estrutura do Código
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+O componente principal `DeliverySystem` contém:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Estados para gerenciar o carrinho, dados do cliente e fluxo do pedido
+- Lista de produtos (pizzas e bebidas) com detalhes como preços, descrições e tempos de preparo
+- Lógica para cálculo de totais e tempo estimado de entrega
+- Componentes visuais para cada etapa do processo (cardápio, dados, confirmação)
+- Modais para seleção de meio a meio e visualização do carrinho
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Personalização
 
-### `npm run eject`
+Para adaptar o sistema à sua pizzaria:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Modifique a lista de produtos no arquivo (`produtos`)
+2. Ajuste os horários de funcionamento na verificação com `useEffect`
+3. Altere as informações de contato no header
+4. Personalize as cores e estilos no Tailwind CSS
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Melhorias Futuras
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Integração com API para gerenciamento de pedidos
+- Sistema de login para clientes cadastrados
+- Histórico de pedidos
+- Avaliação de produtos
+- Cupons de desconto
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Licença
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Este projeto está licenciado sob a licença MIT.
